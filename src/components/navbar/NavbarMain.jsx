@@ -9,19 +9,17 @@ const NavbarMain = () => {
   const [showLinks, setShowLinks] = useState(false);
   const handleToggleLinks = () => {
     setShowLinks(!showLinks);
-    console.log(showLinks);
   };
   return (
-    <nav className="max-w-[1300px] mx-auto px-4 w-full fixed left-[50%] -translate-x-[50%] z-20 flex gap-4 mt-2 ">
-      <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-full border-[0.5px] border-orange  ">
+    <nav className="px-3 lg:px-6 h-20 z-20 flex gap-2 lg:gap-5 justify-center items-center mt-2 ">
+      <div className="flex gap-2 justify-between items-center w-full max-w-[1200px] bg-black   p-4 rounded-full border-[0.5px] border-orange  ">
         <NavbarLogo />
-        <div className={`${
-          showLinks ? "sm:block" : "sm:hidden"} lg:block`}>
+        <div className="lg:w-3/4 hidden lg:flex lg:justify-center">
           <Navbarlinks />
         </div>
         <NavbarBtn />
       </div>
-      <div className="flex lg:hidden @sm:block p-6 bg-black items-center justify-center rounded-full border-[0.5px] border-orange">
+      <div className="lg:hidden block p-4 lg:p-6 bg-black items-center justify-center rounded-full border-[0.5px] border-orange">
         <button
           onClick={handleToggleLinks}
           className="text-2xl p-3 border-orange border rounded-full text-white "
