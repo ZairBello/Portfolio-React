@@ -10,7 +10,7 @@ const HeroPic = () => {
         className="max-h-[450px] w-auto"
       />
       <div className="absolute -z-10 flex justify-center items-center animate-pulse">
-        <PiHexagonThin className="md:h-[90%] h-[120%] min-h-[350px] lg:min-h-[600px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite]" />
+        <PiHexagonThin className="md:min-h-[350px] min-h-[450px] lg:min-h-[600px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite]" />
       </div>
     </div>
   );
